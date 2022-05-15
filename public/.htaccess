@@ -1,0 +1,9 @@
+Options -Multiviews 
+
+# A MultiViews search is where the server does an implicit filename pattern match, 
+# and choose from amongst the results.
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [L]

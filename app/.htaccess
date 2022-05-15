@@ -1,0 +1,8 @@
+Options -Indexes
+
+
+
+# The Indexes option sets whether you can "browse" the directory or not. 
+# If indexes is set to plus, and the directory has no 
+# index.html or index.php (of whatever) file, it will show the contents of the directory just like your filemanager would do. 
+# So if there are ten images in there, it simply shows them as a list with links to the actual image.

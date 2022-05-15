@@ -1,0 +1,48 @@
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+}
+.radio-text {
+    position: relative;
+    top: 6px;
+    font-size: 1rem;
+}
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #F9F9F8ff;
+    border: 2px solid #112539;
+}
+.radio-container input:checked ~ .checkmark {
+    border: 2px solid #3D56B2;
+}
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.radio-container input:checked ~ .checkmark::after {
+    display: block;
+}
+.radio-container .checkmark::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #3D56B2;
+}

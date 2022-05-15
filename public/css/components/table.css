@@ -1,0 +1,154 @@
+table {
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-radius: 0.3rem;
+    margin-top: 2rem;
+    font-size: 0.9em;
+    width: 100%;
+}
+thead tr {
+    text-align: left;
+    border-bottom: 1px solid #e9edf0;
+    color: #798895;
+}
+tbody::before {
+    content: "@";
+    display: block;
+    line-height: 1rem;
+    text-indent: -99999px;
+}
+
+th,
+td {
+    text-align: left;
+}
+th {
+    text-transform: capitalize;
+    padding-block: 1rem;
+}
+td {
+    color: #112539;
+    position: relative;
+    font-size: 1rem;
+}
+
+td.options {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 4.5rem;
+}
+td.options > a,
+td.delete-option {
+    background: url("../../assets/icon/delete.svg") center no-repeat;
+    background-size: contain;
+}
+td.delete-option {
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+td.options img,
+td.options > a {
+    width: 1.3rem;
+    height: 1.3rem;
+    cursor: pointer;
+}
+td.thumbnail-printer > img,
+td.product-details > img {
+    width: 4rem;
+    height: 4rem;
+}
+td.product-details {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+td.product-details > h4 {
+    position: relative;
+    top: 4px;
+}
+
+
+.table-transaksi  td{
+    padding: 1rem;
+}
+.table-transaksi *,
+.table-orders *  {
+    text-align: center;
+}
+.table-orders {
+    table-layout: fixed;
+}
+.table-orders td{
+    padding: 1rem;
+}
+.table-orders span {
+    cursor: default;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+}
+.thead {
+    border-bottom: 1px solid #edf1f3;
+    padding-bottom: 1rem;
+}
+.tbody {
+    margin-top: 2rem;
+}
+.table-orders-list .thead h4:not(.thead h4:nth-of-type(1)) {
+    text-align: center;
+}
+.thead,
+.thead h4,
+.row,
+.row div:nth-of-type(2) {
+    width: 100%;
+}
+.thead,
+.table-orders-list .row div:nth-of-type(1),
+.table-orders-list .row div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+.row + .row {
+    margin-top: 1rem;
+}
+.table-orders-list .row div:nth-of-type(1) {
+    gap: 0.5rem;
+    justify-self: flex-start;
+}
+.table-orders-list .row div:nth-of-type(1) img {
+    width: 4rem;
+    height: 4rem;
+}
+.table-orders-list .row div:nth-of-type(2) {
+    justify-content: center;
+    min-height: 2.5rem;
+    width: 8rem;
+    padding-inline: 0.3rem;
+}
+.table-orders-list .row div:nth-of-type(2) {
+    cursor: pointer;
+}
+.table-orders-list .row div:nth-of-type(2) input {
+    width: 3.3rem;
+    text-align: center;
+    font-size: 1rem;
+    padding-inline: 0.8rem;
+}
+.table-orders-list .row div:nth-of-type(4) {
+    background: url("../../assets/icon/delete.svg") center no-repeat;
+    background-size: contain;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}

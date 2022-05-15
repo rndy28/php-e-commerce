@@ -1,0 +1,100 @@
+.form-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.form,
+.input-container,
+.input-file-container {
+    display: flex;
+    flex-direction: column;
+}
+.form {
+    margin: 0 auto;
+
+    justify-content: center;
+    gap: 1rem;
+    width: 90%;
+    max-width: 25rem;
+}
+.bg {
+    display: none;
+    box-shadow: rgba(99, 99, 99, 0.1) 1px 1px 18px 1px;
+    background-color: #eef2ff;
+}
+.input-container {
+    width: 100%;
+}
+.input-container input,
+.input-container textarea {
+    min-height: 2.9rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #b1d0e0;
+    padding-inline: 0.8rem;
+    transition: border 200ms ease-in;
+    font-size: inherit;
+}
+
+.input-file-container {
+    justify-content: center;
+    gap: .5rem;
+}
+
+.input-container input:focus,
+.input-container input:hover,
+.input-container textarea:focus,
+.input-container textarea:hover {
+    border: 2px solid #406882;
+}
+.input-file-container label,
+.input-container input,
+.input-container label,
+.input-container textarea {
+    color: #406882;
+}
+.input-container label {
+    margin-bottom: 0.3rem;
+}
+.title {
+    margin-bottom: 1rem;
+}
+.small-text {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #7c99ac;
+}
+.small-text > a {
+    color: #ff5959;
+    cursor: pointer;
+}
+
+.form button {
+    margin-top: 0.7rem;
+}
+
+.form-modal {
+    width: 90%;
+}
+
+.form-modal .group {
+    display: flex;
+    gap: 1rem;
+}
+.form-modal .group:nth-of-type(2) {
+    margin-top: 0.7rem;
+}
+.form-modal > .input-container {
+    margin-block: 0.8rem 1rem;
+}
+
+@media (min-width: 900px) {
+    .bg {
+        display: block;
+    }
+    .form,
+    .bg {
+        width: 50%;
+    }
+}

@@ -1,0 +1,89 @@
+.btn {
+    min-height: 3rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a374d;
+    color: #eef2ff;
+    font-size: inherit;
+    font-family: inherit;
+    transition: background-color 200ms ease-in;
+}
+.btn.btn-shop {
+    gap: 0.8rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    max-width: 12rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.btn.btn-shop > span {
+    position: relative;
+    top: 1.5px;
+}
+.btn.btn-shop > img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.btn.btn-add-product,
+.btn.btn-checkout,
+.btn.btn-add-something,
+.btn.btn-submit {
+    font-weight: 600;
+    padding-top: 0.3rem;
+}
+.btn.btn-add-product.added {
+    background-color: #5c7aea;
+}
+.btn.btn-checkout {
+    background-color: #5c7aea;
+    color: #f7f7f7;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+.btn.btn-checkout:hover,
+.btn.btn-add-something:hover {
+    background-color: #14279b;
+}
+.btn.btn-submit:hover {
+    background-color: #3d56b2;
+}
+.btn-back {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    
+}
+.btn-back > img {
+    width: 1rem;
+    height: 1rem;
+}
+.btn-back > h3 {
+    position: relative;
+    top: 3.5px;
+}
+.btn.btn-add-something {
+    background-color: #3d56b2;
+    max-width: 12rem;
+}
+.btn.btn-confirm {
+    min-height: 2.2rem ;
+    width: 70%;
+    padding-inline: 0.7rem;
+    padding-top: 0.2rem;
+}
+.btn.btn-confirm.confirmed {
+    background-color: #5c7aea;
+}
+@media (min-width: 900px) {
+    .btn.btn-shop {
+        margin-inline: 0;
+    }
+}
