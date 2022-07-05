@@ -1,0 +1,22 @@
+{
+    "name": "rndy/printe",
+    "description": "Dead simple e-commerce web app with mvc architecture",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rndy\\Printe\\": "public/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rndy28",
+            "email": "rendyramadhan838@gmail.com",
+            "role": "Developer"
+        }
+    ],
+   "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "ext-mbstring": "*"
+    }
+}
