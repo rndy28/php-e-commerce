@@ -17,6 +17,17 @@
    "type": "project",
     "require": {
         "php": ">=7.4",
-        "ext-mbstring": "*"
+        "ext-mbstring": "*",
+        "ext-mysql": "*",
+        "ext-gettext": "*"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan clear-compiled",
+            "chmod -R 777 public/"
+        ]
     }
 }
